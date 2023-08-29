@@ -1,0 +1,246 @@
+@font-face {
+    font-family: comici;
+    src: url('../fonts/comici.ttf');
+}
+
+@font-face {
+    font-family: handel-gothic;
+    src: url('../fonts/Handel\ Normal.ttf');
+}
+
+@font-face {
+    font-family: muli-Bold;
+    src: url('../fonts/Muli-Bold.ttf');
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+* {
+    font-family: comici;
+    font-weight: 500;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: transparent !important;
+}
+
+@media (orientation: landscape) {
+
+    .border-1 {
+        border: .1vh solid black;
+    }
+
+    .border-8 {
+        border: .8vh solid black;
+    }
+
+    .bt {
+        border-top: .1vh solid black;
+    }
+
+    .bb {
+        border-bottom: .1vh solid black;
+    }
+
+    .bl {
+        border-left: .1vh solid black;
+    }
+
+    .br {
+        border-right: .1vh solid black;
+    }
+
+    .bt-2 {
+        border-top: .2vh solid black;
+    }
+
+    .bb-2 {
+        border-bottom: .2vh solid black;
+    }
+
+    .bl-2 {
+        border-left: .2vh solid black;
+    }
+
+    .br-2 {
+        border-right: .2vh solid black;
+    }
+
+    .bt-3 {
+        border-top: .3vh solid black;
+    }
+
+    .bb-3 {
+        border-bottom: .3vh solid black;
+    }
+
+    .bl-3 {
+        border-left: .3vh solid black;
+    }
+
+    .br-3 {
+        border-right: .3vh solid black;
+    }
+
+    .bt-4 {
+        border-top: .4vh solid black;
+    }
+
+    .bb-4 {
+        border-bottom: .4vh solid black;
+    }
+
+    .bl-4 {
+        border-left: .4vh solid black;
+    }
+
+    .br-4 {
+        border-right: .4vh solid black;
+    }
+
+    .bt-5 {
+        border-top: .5vh solid black;
+    }
+
+    .bb-5 {
+        border-bottom: .5vh solid black;
+    }
+
+    .bl-5 {
+        border-left: .5vh solid black;
+    }
+
+    .br-5 {
+        border-right: .5vh solid black;
+    }
+
+    .guide-message,
+    .table .content {
+        font-size: 4vh;
+    }
+
+    .message {
+        font-size: 5vh;
+    }
+}
+
+@media (orientation: portrait) {
+
+    .border-1 {
+        border: .1vw solid black;
+    }
+
+    .border-8 {
+        border: .8vw solid black;
+    }
+
+    .bt {
+        border-top: .1vw solid black;
+    }
+
+    .bb {
+        border-bottom: .1vw solid black;
+    }
+
+    .bl {
+        border-left: .1vw solid black;
+    }
+
+    .br {
+        border-right: .1vw solid black;
+    }
+
+    .bt-2 {
+        border-top: .2vw solid black;
+    }
+
+    .bb-2 {
+        border-bottom: .2vw solid black;
+    }
+
+    .bl-2 {
+        border-left: .2vw solid black;
+    }
+
+    .br-2 {
+        border-right: .2vw solid black;
+    }
+
+    .bt-3 {
+        border-top: .3vw solid black;
+    }
+
+    .bb-3 {
+        border-bottom: .3vw solid black;
+    }
+
+    .bl-3 {
+        border-left: .3vw solid black;
+    }
+
+    .br-3 {
+        border-right: .3vw solid black;
+    }
+
+    .bt-4 {
+        border-top: .4vw solid black;
+    }
+
+    .bb-4 {
+        border-bottom: .4vw solid black;
+    }
+
+    .bl-4 {
+        border-left: .4vw solid black;
+    }
+
+    .br-4 {
+        border-right: .4vw solid black;
+    }
+
+    .bt-5 {
+        border-top: .5vw solid black;
+    }
+
+    .bb-5 {
+        border-bottom: .5vw solid black;
+    }
+
+    .bl-5 {
+        border-left: .5vw solid black;
+    }
+
+    .br-5 {
+        border-right: .5vw solid black;
+    }
+
+    .guide-message,
+    .table .content {
+        font-size: 4vw;
+    }
+
+    .message {
+        font-size: 5vw;
+    }
+}

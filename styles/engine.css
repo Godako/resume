@@ -1,0 +1,57 @@
+.electric-engine {
+    width: 20%;
+    height: 20%;
+    top: -20%;
+    left: 10%;
+    border-radius: 25%;
+    background-color: #bed9dd;
+}
+
+.electric-engine::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 30%;
+    border-right: 1px solid black;
+}
+
+.electric-engine::after {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 40%;
+    left: 40%;
+    top: 25%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.electric-engine span::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    left: 40%;
+    top: 50%;
+    border-top: 1px solid black;
+}
+
+.electric-engine .rotor {
+    left: 85%;
+    top: 15%;
+    width: 30%;
+    height: 70%;
+    background-color: #919899;
+    border-radius: 25%;
+    z-index: -1;
+}
+
+.rotor::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    background-color: black;
+    left: 100%;
+    top: 36%;
+    border-radius: 0% 50% 50% 0%;
+}

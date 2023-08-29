@@ -1,0 +1,318 @@
+:root {
+    --skin-color: #ffe0bd;
+    --skin-color-2: #ffcd94;
+    --t-shirt-color: #008b8b;
+    --pants-color: #5F9EA0;
+}
+
+.player {
+    position: absolute;
+    height: 9%;
+    width: 3%;
+    top: 5%;
+    left: 7%;
+    z-index: 10;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.player div {
+    position: absolute;
+}
+
+.head {
+    height: 25%;
+    width: 100%;
+    z-index: 20;
+}
+
+.face {
+    left: 20%;
+    height: 100%;
+    width: 60%;
+    background-color: var(--skin-color);
+    border-radius: 50% 50% 40% 40%;
+}
+
+.face-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.hair-back {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    border-radius: 50% 50% 40% 40%;
+    background-color: black;
+    display: none;
+    z-index: 10;
+}
+
+.hair {
+    border-radius: 50% 50% 20% 20%;
+    height: 30%;
+    width: 95%;
+    top: -5%;
+    left: 3%;
+    background-color: black;
+}
+
+.hair-left {
+    height: 50%;
+    width: 20%;
+    top: 7%;
+    left: -5%;
+    background-color: black;
+    border-radius: 50% 0% 50% 35%;
+    z-index: -1;
+}
+
+.hair-right {
+    height: 50%;
+    width: 20%;
+    top: 7%;
+    left: 85%;
+    background-color: black;
+    border-radius: 0% 50% 35% 50%;
+    z-index: -1;
+}
+
+.eye {
+    height: 8%;
+    width: 8%;
+    top: 40%;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.eye::after {
+    content: '';
+    height: 25%;
+    width: 150%;
+    top: -60%;
+    left: -15%;
+    background-color: black;
+    border-radius: 40%;
+}
+
+.eye.right {
+    left: 65%;
+}
+
+.eye.left {
+    left: 25%;
+}
+
+.nose {
+    height: 20%;
+    width: 10%;
+    top: 45%;
+    left: 45%;
+    background-color: var(--skin-color-2);
+    border-radius: 0% 0% 50% 50%;
+}
+
+.mouth {
+    height: 4%;
+    width: 40%;
+    left: 30%;
+    top: 70%;
+    background-color: black;
+    border-radius: 25% 25% 50% 50%;
+}
+
+.neck {
+    left: 40%;
+    top: 22%;
+    height: 5%;
+    width: 20%;
+    background-color: var(--skin-color);
+    border-radius: 40%;
+    z-index: 15;
+}
+
+.body {
+    height: 40%;
+    width: 90%;
+    top: 25%;
+    left: 5%;
+    background-color: var(--t-shirt-color);
+    border-radius: 25%;
+    z-index: 10;
+}
+
+.arm {
+    height: 80%;
+    width: 18%;
+    top: 5%;
+    transform-origin: 50% 10%;
+    background: linear-gradient(var(--t-shirt-color) 50%, var(--skin-color) 50%);;
+}
+
+.arm.left {
+    left: -5%;
+    border-radius: 50% 0% 50% 0%;
+}
+
+.arm.right {
+    left: 85%;
+    border-radius: 0% 50% 0% 50%;
+}
+
+.hand {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    top: 95%;
+    background-color: var(--skin-color);
+    z-index: 10;
+}
+
+.hand.right {
+    left: 20%;
+    transform: rotate(25deg);
+    border-radius: 25% 50% 25% 50%;
+}
+
+.hand.left {
+    left: -20%;
+    transform: rotate(-25deg);
+    border-radius: 50% 25% 50% 25%;
+}
+
+.foot {
+    height: 40%;
+    width: 100%;
+    top: 60%;
+    z-index: 5;
+}
+
+.leg {
+    height: 100%;
+    width: 35%;
+    background-color: var(--pants-color);
+    transform-origin: 50% 10%;
+}
+
+.leg.left {
+    left: 10%;
+}
+
+.leg.right {
+    left: 55%;
+}
+
+.shoe {
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    top: 90%;
+}
+
+.pants-top {
+    height: 35%;
+    width: 76%;
+    top: -10%;
+    left: 12%;
+    background-color: cadetblue;
+    border-radius: 10%;
+    z-index: 10;
+}
+
+.waving-left {
+    animation: waving-left 1s infinite;
+    animation-direction: alternate;
+}
+
+.waving-right {
+    animation: waving-right 1s infinite;
+    animation-direction: alternate;
+}
+
+.talk {
+    animation: talk 1s infinite;
+    animation-direction: alternate;
+}
+
+.walking-left {
+    animation: walking-left 0.5s infinite;
+    animation-direction: alternate;
+}
+
+.walking-right {
+    animation: walking-right 0.5s infinite;
+    animation-direction: alternate;
+}
+
+.walking-vertical-left {
+    animation: walking-vertical 0.5s infinite;
+    animation-direction: alternate;
+}
+
+.walking-vertical-right {
+    animation: walking-vertical 0.5s infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes waving-left {
+   
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(120deg);
+    }
+}
+
+@keyframes waving-right {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-120deg);
+    }
+}
+
+@keyframes walking-vertical {
+    from {
+        height: 90%;
+    }
+
+    to {
+        height: 60%;
+    }
+}
+
+@keyframes talk {
+    from {
+        height: 4%;
+    }
+
+    to {
+        height: 10%;
+    }
+}
+
+@keyframes walking-left {
+    from {
+        transform: rotate(-10deg);
+    }
+
+    to {
+        transform: rotate(25deg);
+    }
+}
+
+@keyframes walking-right {
+    from {
+        transform: rotate(10deg);
+    }
+
+    to {
+        transform: rotate(-25deg);
+    }
+}

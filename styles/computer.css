@@ -1,0 +1,195 @@
+.computer {
+    width: 30%;
+    height: 40%;
+    left: 40%;
+    top: -45%;
+    background-color: black;
+    border-radius: 10%;
+}
+
+.computer::before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    left: 40%;
+    top: 100%;
+    background-color: black;
+    border-radius: 0% 0% 10% 10%;
+    z-index: -1;
+}
+
+.computer .screen {
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 10%;
+}
+
+.screen .diagnosis {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 10%;
+}
+
+.screen .code-editor {
+    width: 100%;
+    height: 100%;
+    background-color: #4A473F;
+    border-radius: 10%;
+}
+
+.screen .projects {
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+    border-radius: 10%;
+}
+
+.projects .project {
+    left: 10%;
+    width: 80%;
+    height: 30%;
+    background-color: aqua;
+    border-radius: 10%;
+}
+
+.projects .project::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 20%;
+    left: 5%;
+    background-color: black;
+}
+
+.projects .project::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 40%;
+    left: 5%;
+    background-color: black;
+}
+
+.sinus {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 30%;
+    height: 50%;
+    top: 5%;
+    border-top: 1px solid;
+}
+
+.sinus::before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    top: -15%;
+    border-bottom: 1px solid;
+}
+
+.sinus::after {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    left: 200%;
+    border-top: 1px solid;
+}
+
+.sinus.red {
+    border-top: 1px solid red;
+}
+
+.sinus.red::before {
+    border-bottom: 1px solid red;
+}
+
+.sinus.red::after {
+    border-top: 1px solid red;
+}
+
+.sinus.blue {
+    border-top: 1px solid blue;
+}
+
+.sinus.blue::before {
+    border-bottom: 1px solid blue;
+}
+
+.sinus.blue::after {
+    border-top: 1px solid blue;
+}
+
+.code {
+    height: 5%;
+}
+
+.code.blue {
+    background-color: #569CD6;
+}
+
+.code.brown {
+    background-color: #CE9178;
+}
+
+.code.tail {
+    background-color: #9CDCFE;
+}
+
+.code.yellow {
+    background-color: #DCDCAA;
+}
+
+.keyboard {
+    width: 30%;
+    height: 2%;
+    top: -2%;
+    left: 10%;
+    background-color: black;
+}
+
+.mouse {
+    width: 5%;
+    height: 5%;
+    top: -5%;
+    left: 70%;
+    border-radius: 40% 40% 0% 0%;
+    background-color: black;
+}
+
+.project-computer {
+    width: 60vw;
+    height: 50vw;
+    left: 40vw;
+}
+
+.project-computer .portfolio {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+@media (orientation: landscape) {
+    .project-computer .portfolio {
+        border: 4vh solid black;
+    }
+}
+
+@media (orientation: portrait) {
+    .project-computer .portfolio {
+        border: 4vw solid black;
+    }
+}

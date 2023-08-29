@@ -1,0 +1,46 @@
+.river {
+    height: 12%;
+    width: 100%;
+}
+
+.bridge {
+    width: 7%;
+    height: 110%;
+    background-color: white;
+    background: repeating-linear-gradient(0deg,
+            #B07C4F,
+            #B07C4F 20%,
+            #BA8E4A 20%,
+            #BA8E4A 40%);
+    top: -5%;
+    z-index: 100;
+}
+
+.wave-container {
+    height: 100%;
+    width: 100%;
+}
+
+.wave-container.left {
+    margin-left: -1%;
+}
+
+.wave-container.right {
+    margin-left: 1%;
+}
+
+.wave {
+    height: 25%;
+    width: 10%;
+    border-radius: 50% 50% 0% 0%;
+}
+
+.wave-1 {
+    background-color: #86b4bc;
+
+}
+
+.wave-2 {
+    background-color: #89cff0;
+
+}

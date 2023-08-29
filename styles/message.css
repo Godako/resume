@@ -1,0 +1,19 @@
+.message-box {
+    width: 8%;
+    left: 11%;
+    z-index: 100;
+}
+
+.message {
+    width: fit-content;
+    padding: 5%;
+    border-radius: 12%;
+    background-color: whitesmoke;
+    opacity: .8;
+}
+
+.talk-zone {
+    width: 2%;
+    height: 7%;
+    z-index: 100;
+}

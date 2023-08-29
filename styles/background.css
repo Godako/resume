@@ -1,0 +1,104 @@
+#background {
+    top: -100%;
+    left: -50%;
+    background-color: skyblue;
+    z-index: -1;
+}
+
+#ground {
+    z-index: 5;
+}
+
+#sky {
+    z-index: 100;
+}
+
+#player-layout {
+    z-index: 15;
+}
+
+#object-layout {
+    z-index: 10;
+}
+
+#project-layout {
+    z-index: 100;
+}
+
+.layout {
+    position: absolute;
+}
+
+.layout div {
+    position: absolute;
+}
+
+.grass {
+    width: 100%;
+    height: 100%;
+    background-color: #5FC314;
+}
+
+@media (orientation: landscape) {
+    #background {
+        height: 2000vh;
+        width: 2000vh;
+    }
+    
+    #ground {
+        height: 500vh;
+        width: 500vh;
+    }
+    
+    #sky {
+        height: 600vh;
+        width: 600vh;
+    }
+    
+    #player-layout {
+        height: 500vh;
+        width: 500vh;
+    }
+    
+    #object-layout {
+        height: 500vh;
+        width: 500vh;
+    }
+
+    #project-layout {
+        height: 500vh;
+        width: 500vh;
+    }
+}
+
+@media (orientation: portrait) {
+    #background {
+        height: 2000vw;
+        width: 2000vw;
+    }
+    
+    #ground {
+        height: 500vw;
+        width: 500vw;
+    }
+    
+    #sky {
+        height: 600vw;
+        width: 600vw;
+    }
+    
+    #player-layout {
+        height: 500vw;
+        width: 500vw;
+    }
+    
+    #object-layout {
+        height: 500vw;
+        width: 500vw;
+    }
+
+    #project-layout {
+        height: 500vw;
+        width: 500vw;
+    }
+}

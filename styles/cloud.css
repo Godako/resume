@@ -1,0 +1,39 @@
+.cloud-container {
+    width: 100%;
+    height: 100%;
+    animation: cloud-move 30s infinite;
+    animation-direction: alternate;
+}
+
+.cloud {
+    background-color: whitesmoke;
+    border-radius: 50% 50% 0% 0%;
+}
+
+.cloud::after,
+.cloud::before {
+    content: '';
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 50% 50% 35% 35%;
+}
+
+.cloud::after {
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: -35%;
+}
+
+.cloud::before {
+    width: 75%;
+    height: 75%;
+    top: 25%;
+    left: 75%;
+}
+
+@keyframes cloud-move {
+    100% {
+        margin-left: 5%;
+    }
+}

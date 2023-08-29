@@ -1,0 +1,36 @@
+.obj {
+    width: 10%;
+    height: 10%;
+    top: 10%;
+    left: 7%;
+    background-color: white;
+}
+
+.up-to-down {
+    animation: up-to-down 0.3s linear;
+}
+
+.down-to-up {
+    animation: down-to-up 0.3s linear;
+}
+
+.rotate-90 {
+    rotate: -90deg;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    left: 40%;
+    top: -75%;
+}
+
+@keyframes up-to-down {
+    from {
+        margin-top: -15%;
+    }
+}
+
+@keyframes down-to-up {
+    from {
+        margin-top: 5%;
+    }
+}

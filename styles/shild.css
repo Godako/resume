@@ -1,0 +1,88 @@
+.shild {
+    left: 5%;
+    top: -10%;
+    width: 130%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-25deg) rotateY(45deg);
+}
+
+.shild .left, .shild .right {
+    width: 55%;
+    height: 88%;
+}
+
+.shild .left {
+    left: -5%;
+    top: -3.3%;
+}
+
+.shild .right {
+    left: 7%;
+    top: 2%;
+}
+
+.shild .middle-top {
+    width: 77%;
+    height: 48%;
+    left: -10%;
+    top: -4%;
+    transform: rotateY(135deg);
+}
+.shild .orange {
+    background-color: #f1652a;
+}
+
+.shild .dark-orange {
+    background-color: #e44c25;
+}
+
+.shild .dark-orange.orange {
+    background: linear-gradient(-90deg, #e44c25 50.6%, #f1652a 49.4%);
+}
+
+.shild .blue {
+    background-color: #29a8e0;
+}
+
+.shild .dark-blue {
+    background-color: #0170ba;
+}
+
+.shild .dark-blue.blue {
+    background: linear-gradient(-90deg, #0170ba 50.6%, #29a8e0 49.4%);
+}
+
+.shild .yellow {
+    background-color: #ffda3e;
+}
+
+.shild .dark-yellow {
+    background-color: #d6ba32;
+}
+
+.shild .dark-yellow.yellow {
+    background: linear-gradient(-90deg, #d6ba32 50.6%, #ffda3e 49.4%);
+}
+
+@media (orientation: landscape) {
+
+    .shild .left {
+        transform: rotateY(-90deg) translateZ(11vh);
+    }
+
+    .shild .right {
+        transform: translateZ(11vh);
+    }
+}
+
+@media (orientation: portrait) {
+
+    .shild .left {
+        transform: rotateY(-90deg) translateZ(11vw);
+    }
+
+    .shild .right {
+        transform: translateZ(11vw);
+    }
+}

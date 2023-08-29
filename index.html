@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Ákos Dániel Godány</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/player.css">
+    <link rel="stylesheet" href="styles/road.css">
+    <link rel="stylesheet" href="styles/river.css">
+    <link rel="stylesheet" href="styles/cloud.css">
+    <link rel="stylesheet" href="styles/object.css">
+    <link rel="stylesheet" href="styles/message.css">
+    <link rel="stylesheet" href="styles/guide.css">
+    <link rel="stylesheet" href="styles/stake.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/desk.css">
+    <link rel="stylesheet" href="styles/soldering.css">
+    <link rel="stylesheet" href="styles/engine.css">
+    <link rel="stylesheet" href="styles/computer.css">
+    <link rel="stylesheet" href="styles/chair.css">
+    <link rel="stylesheet" href="styles/shild.css">
+    <link rel="stylesheet" href="styles/logos.css">
+</head>
+
+<body>
+    <!-- Layouts -->
+    <div class="layout" id="background"></div>
+    <div class="layout" id="sky"></div>
+    <div class="layout" id="ground">
+        <div class="grass border-1"></div>
+    </div>
+    <!-- Object layout -->
+    <div class="layout" id="object-layout">
+
+        <!-- Talk zones -->
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="Welcome to my interactive resume! I'm Ákos Dániel Godány.<br>You can move with keyboard arrows or just tap where you want to go."
+            data-waving-left="1" style="left: 7%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone" data-message="Let me introduce myself."
+            style="left: 10%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="I graduated in 2016 as an electronics technician." data-waving-right="1"
+            style="left: 15%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="After I finished my studies, I started to work in this area for 5 years."
+            data-waving-right="1" style="left: 30%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="It was part of my job to assembling, testing and servicing electrical equipments, and programming PLCs."
+            style="left: 48%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="In 2019 I got interested in programming, therefore I completed software development course."
+            data-waving-right="1" style="left: 57%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="In the course, we learned the basics of programming in C#." style="left: 64%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="After completing the course, I continued my studies by learning web technologies."
+            style="left: 68%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="Ever since I finished my studies, I started to work as a software developer."
+            style="left: 72%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="In my current job, it is part of my responsibility to develop online business management systems."
+            style="left: 85%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="Technologies used in my work: PHP, MYSQL, javascript, HTML, CSS, Laravel, Bootstrap."
+            style="left: 90%; top: 9%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone" data-message="Let me present my tech knowledge."
+            data-waving-left="1" style="left: 93%; top: 26%; transform: rotate(90deg);">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone" data-message="My basic skills."
+            style="left: 88%; top: 36%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone" data-message="Front end libraries which I'm familiar with."
+            data-waving-left="1" style="left: 58%; top: 36%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone" data-message="My back end knowledge."
+            style="left: 39%; top: 36%;">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone" data-message="Finally, let me introduce my hobby projects."
+            data-waving-right="1" style="left: 8%; top: 44%; transform: rotate(90deg)">
+        </div>
+        <div class="object talk-zone" data-class="talk-zone"
+            data-message="Take a seat in front of the computer and have a look them."
+            style="left: 8%; top: 57%; transform: rotate(90deg)">
+        </div>
+        <!-- Talk zones end -->
+
+        <!-- About me -->
+        <!-- Guide -->
+        <div class="object guide" style="left: 5%; top: 3%;">
+            <div class="guide-message border-1">
+                About me
+            </div>
+            <div class="stake border-1"></div>
+        </div>
+        <!-- Guide end-->
+
+        <!--Education table -->
+        <div class="object table" data-class="animated-object" data-animation="up-to-down" style="left: 15%; top: 1%;">
+            <div class="wrapper hide">
+                <div class="content border-1">
+                    <h2>Education</h2>
+                    <p>Electronics technician</p>
+                    <p>2014. 09. 01. - 2016. 06. 09.</p>
+                </div>
+                <div class="stake left border-1"></div>
+                <div class="stake right border-1"></div>
+            </div>
+        </div>
+        <!-- Education table end -->
+
+        <!-- Work experience table -->
+        <div class="object table" data-class="animated-object" data-animation="up-to-down" style="left: 31%; top: 1%;">
+            <div class="wrapper hide">
+                <div class="content border-1">
+                    <h2>Work experience</h2>
+                    <p>Electronics technican</p>
+                    <p>2016. 09. 13. - 2021. 10. 31.</p>
+                </div>
+                <div class="stake left border-1"></div>
+                <div class="stake right border-1"></div>
+            </div>
+        </div>
+        <!-- Work experience table end -->
+
+        <!-- Work desk -->
+        <div class="object desk" data-class="animated-object" data-animation="down-to-up" style="left: 47%; top: 4%">
+            <div class="wrapper hide">
+                <div class="top border-1"></div>
+                <div class="stake left border-1"></div>
+                <div class="stake right border-1">
+                    <div class="drawer"></div>
+                    <div class="drawer middle"></div>
+                    <div class="drawer bottom"></div>
+                </div>
+                <div class="soldering">
+                    <div class="cable"></div>
+                    <div class="holder"></div>
+                </div>
+                <div class="electric-engine border-1">
+                    <span></span>
+                    <div class="rotor border-1"></div>
+                </div>
+                <div class="computer">
+                    <div class="screen">
+                        <div class="diagnosis">
+                            <div class="sinus red"></div>
+                            <div class="sinus blue" style="left: 15%;"></div>
+                            <div class="sinus red" style="top: 50%; left: 15%;"></div>
+                            <div class="sinus blue" style="top: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Work desk end -->
+
+        <!-- Education table -->
+        <div class="object table" data-class="animated-object" data-animation="up-to-down" style="left: 57%; top: 1%;">
+            <div class="wrapper hide">
+                <div class="content border-1">
+                    <h2>Education</h2>
+                    <p>Software developer</p>
+                    <p>2017. 09. 01. - 2019. 02. 12.</p>
+                </div>
+                <div class="stake left border-1"></div>
+                <div class="stake right border-1"></div>
+            </div>
+        </div>
+        <!-- Education table end -->
+
+        <!-- Work experience table -->
+        <div class="object table" data-class="animated-object" data-animation="up-to-down" style="left: 73%; top: 1%;">
+            <div class="wrapper hide">
+                <div class="content border-1">
+                    <h2>Work experience</h2>
+                    <p>Software developer</p>
+                    <p>2021. 11. 02. - </p>
+                </div>
+                <div class="stake left border-1"></div>
+                <div class="stake right border-1"></div>
+            </div>
+        </div>
+        <!-- Work experience table end -->
+
+        <!-- Work desk -->
+        <div class="object desk" data-class="animated-object" data-animation="down-to-up" style="left: 89%; top: 4%">
+            <div class="wrapper hide">
+                <div class="top border-1"></div>
+                <div class="stake left border-1"></div>
+                <div class="stake right border-1">
+                    <div class="drawer"></div>
+                    <div class="drawer middle"></div>
+                    <div class="drawer bottom"></div>
+                </div>
+                <div class="computer">
+                    <div class="screen">
+                        <div class="code-editor">
+                            <div class="code blue" style="width: 10%; left: 1%; top: 3%"></div>
+                            <div class="code brown" style="width: 12%; left: 4%; top: 10%"></div>
+                            <div class="code tail" style="width: 15%; left: 18%; top: 10%"></div>
+                            <div class="code yellow" style="width: 14%; left: 4%; top: 17%"></div>
+                            <div class="code brown" style="width: 30%; left: 21%; top: 17%"></div>
+                            <div class="code blue" style="width: 10%; left: 1%; top: 25%"></div>
+
+                            <div class="code blue" style="width: 10%; left: 1%; top: 35%"></div>
+                            <div class="code tail" style="width: 15%; left: 4%; top: 43%"></div>
+                            <div class="code brown" style="width: 20%; left: 22%; top: 43%"></div>
+                            <div class="code yellow" style="width: 25%; left: 4%; top: 51%"></div>
+                            <div class="code brown" style="width: 15%; left: 32%; top: 51%"></div>
+                            <div class="code yellow" style="width: 17%; left: 49%; top: 51%"></div>
+                            <div class="code brown" style="width: 12%; left: 4%; top: 59%"></div>
+                            <div class="code tail" style="width: 15%; left: 18%; top: 59%"></div>
+                            <div class="code blue" style="width: 10%; left: 1%; top: 67%"></div>
+
+                            <div class="code blue" style="width: 10%; left: 1%; top: 76%"></div>
+                            <div class="code brown" style="width: 12%; left: 4%; top: 83%"></div>
+                            <div class="code tail" style="width: 15%; left: 18%; top: 83%"></div>
+                            <div class="code yellow" style="width: 14%; left: 4%; top: 91%"></div>
+                            <div class="code brown" style="width: 30%; left: 21%; top: 91%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard"></div>
+                <div class="mouse"></div>
+            </div>
+        </div>
+        <!-- Work desk end -->
+        <!-- About me end -->
+
+        <!-- Logos -->
+        <!-- Guide -->
+        <div class="object guide" style="left: 97%; top: 10%; z-index: 100; rotate: 90deg;">
+            <div class="guide-message border-1">
+                <span class="rotate-90">Skills</span>
+            </div>
+            <div class="stake border-1"></div>
+        </div>
+        <!-- Guide end -->
+
+        <!-- HTML logo -->
+        <div class="object" data-class="animated-object" data-animation="down-to-up"
+            style="width: 8%; height: 8%; top: 29.7%; left: 80%;">
+            <div class="wrapper hide">
+                <div class="shild">
+                    <div class="left dark-orange bb bl"></div>
+                    <div class="middle-top dark-orange orange bt"></div>
+                    <div class="right orange bb br"></div>
+                </div>
+                <div class="logo">
+                    <div class="horizontal total"></div>
+                    <div class="vertical half dark-side" style="top: 15%;"></div>
+                    <div class="horizontal total" style="top: 50%;"></div>
+                    <div class="vertical half bright-side" style="top: 57%; left:87%;"></div>
+                    <div class="horizontal half bright-side tilted right" style="top: 102%; left: 43.8%;"></div>
+                    <div class="horizontal half dark-side tilted left" style="top: 102%; left: -6%"></div>
+                    <div class="vertical quarter dark-side" style="top: 82%; left: -1%;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- HTML logo end -->
+
+        <!-- CSS logo -->
+        <div class="object" data-class="animated-object" data-animation="up-to-down"
+            style="width: 8%; height: 8%; top: 29.7%; left: 70%;">
+            <div class="wrapper hide">
+                <div class="shild">
+                    <div class="left dark-blue bb bl"></div>
+                    <div class="middle-top dark-blue blue bt"></div>
+                    <div class="right blue bb br"></div>
+                </div>
+                <div class="logo">
+                    <div class="horizontal total"></div>
+                    <div class="horizontal total" style="top: 50%;"></div>
+                    <div class="vertical total bright-side" style="left: 87%;"></div>
+                    <div class="horizontal half bright-side tilted right" style="top: 102%; left: 43.8%;"></div>
+                    <div class="horizontal half dark-side tilted left" style="top: 102%; left: -6%"></div>
+                    <div class="vertical quarter dark-side" style="top: 82%; left: -1%;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- CSS logo end -->
+
+        <!-- Javascript logo -->
+        <div class="object" data-class="animated-object" data-animation="down-to-up"
+            style="width: 8%; height: 8%; top: 29.7%; left: 60%;">
+            <div class="wrapper hide">
+                <div class="shild">
+                    <div class="left dark-yellow bb bl"></div>
+                    <div class="middle-top dark-yellow yellow bt"></div>
+                    <div class="right yellow bb br"></div>
+                </div>
+                <div class="logo">
+                    <div class="vertical total dark-side" style="top: 8%; left: 30%;"></div>
+                    <div class="horizontal dark-side tilted left" style="top: 91%; left: -12.6%"></div>
+                    <div class="horizontal quarter dark-side" style="top: 8%; left: 5%"></div>
+                    <div class="vertical quarter dark-side" style="top: 72%; left: -7%;"></div>
+                    <div class="horizontal half bright-side tilted right" style="top: 91%; left: 50.3%;"></div>
+                    <div class="vertical quarter bright-side" style="top: 62%; left: 92.8%;"></div>
+                    <div class="horizontal half bright-side right" style="top: 48%; left: 56%;"></div>
+                    <div class="vertical quarter bright-side" style="top: 23%; left: 56%;"></div>
+                    <div class="horizontal half bright-side right" style="top: 8%; left: 56%;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Javascript logo end -->
+
+        <!-- Bootstrap logo -->
+        <div class="object" data-class="animated-object" data-animation="up-to-down"
+            style="width: 7%; height: 7%; top: 30%; left: 50%;">
+            <div class="wrapper hide">
+                <div class="bootstrap square">
+                    <div class="inner">B</div>
+                </div>
+                <div class="bootstrap middle"></div>
+                <div class="bootstrap cover top left"></div>
+                <div class="bootstrap cover bottom left"></div>
+                <div class="bootstrap cover top right"></div>
+                <div class="bootstrap cover bottom right"></div>
+            </div>
+        </div>
+        <!-- Bootstrap logo end -->
+
+        <!-- React logo -->
+        <div class="object" data-class="animated-object" data-animation="down-to-up"
+            style="width: 7%; height: 7%; top: 30%; left: 41%;">
+            <div class="react wrapper hide">
+                <div class="react ellipse border-8"></div>
+                <div class="react ellipse border-8" style="transform: rotate(60deg);"></div>
+                <div class="react ellipse border-8" style="transform: rotate(-60deg);"></div>
+                <div class="react circle"></div>
+            </div>
+        </div>
+        <!-- React logo end -->
+
+        <!-- PHP logo -->
+        <div class="object" data-class="animated-object" data-animation="up-to-down"
+            style="width: 12%; height: 6%; top: 31%; left: 27%;">
+            <div class="wrapper hide">
+                <div class="php-logo">
+                    <div class="inner">
+                        <div>php</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PHP logo end -->
+
+        <!-- Laravel logo -->
+        <div class="object" data-class="animated-object" data-animation="up-to-down"
+            style="width: 6%; height: 6%; top: 31%; left: 19%;">
+            <div class="wrapper hide">
+                <div class="laravel-1"></div>
+                <div class="laravel-2"></div>
+                <div class="laravel-3"></div>
+            </div>
+        </div>
+        <!-- Laravel logo end -->
+
+        <!-- SQL logo -->
+        <div class="object" data-class="animated-object" data-animation="down-to-up"
+            style="width: 6%; height: 7%; top: 30%; left: 9%;">
+            <div class="wrapper hide">
+                <div class="database">
+                    <div class="top bl-5 br-5 bt-5 bb-5"></div>
+                    <div class="stack bl-5 br-5 bb-5" style="top: 69%;"></div>
+                    <div class="stack bl-5 br-5 bb-5" style="top: 56%;"></div>
+                    <div class="stack bl-5 br-5 bb-5" style="top: 43%;"></div>
+                    <div class="stack bl-5 br-5 bb-5" style="top: 30%;"></div>
+                    <div class="stack bl-5 br-5 bb-5" style="top: 17%;"></div>
+                    <div class="stack bl-5 br-5 bb-5" style="top: 4%;"></div>
+                    <div class="circle bl-5 br-5 bt-5 bb-5">
+                        <div class="inner">SQL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SQL end -->
+        <!-- Logos end-->
+
+        <!-- Projects -->
+        <!-- Guide -->
+        <div class="object guide" style="left: 0%; top: 43%; transform: rotate(40deg); z-index: 101;">
+            <div class="guide-message border-1">
+                Projects
+            </div>
+            <div class="stake border-1"></div>
+        </div>
+        <!-- Guide end -->
+
+        <!-- Work desk -->
+        <div class="object desk" data-class="chair" style="left: 16%; top: 64%">
+            <div class="wrapper">
+                <div class="top border-1"></div>
+                <div class="stake left border-1"></div>
+                <div class="stake right border-1">
+                    <div class="drawer"></div>
+                    <div class="drawer middle"></div>
+                    <div class="drawer bottom"></div>
+                </div>
+                <div class="computer">
+                    <div class="screen">
+                        <div class="projects">
+                            <div class="project"></div>
+                            <div class="project" style="top: 35%;"></div>
+                            <div class="project" style="top: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard"></div>
+                <div class="mouse"></div>
+                <div class="chair object">
+                    <div class="backrest"></div>
+                    <div class="me border-1 hide"></div>
+                    <div class="leg"></div>
+                    <div class="wheel left"></div>
+                    <div class="wheel right"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Work desk end -->
+
+        <!-- Terrian objects -->
+        <div class="object" style="left: 16%; top: 59%; width: 2%; height: 15%; background-color: transparent;"></div>
+        <div class="road border-1" style="top: 9%;"></div>
+        <div class="object river" style="top: 18%;" data-class="river">
+            <div class="bridge border-1" style="left: 90%;"></div>
+        </div>
+        <div class="road border-1" style="top: 38%;"></div>
+        <div class="object river" style="top: 47%;" data-class="river">
+            <div class="bridge border-1" style="left: 5%;"></div>
+        </div>
+        <div class="object river" style="top: 72%;" data-class="river">
+        </div>
+        <!-- Terrian objects end -->
+    </div>
+    <!-- Object layout end-->
+
+    <!-- Player layout -->
+    <div class="layout" id="player-layout">
+        <div class="player">
+            <div class="head">
+                <div class="face border-1">
+                    <div class="hair"></div>
+                    <div class="hair-back"></div>
+                    <div class="hair-left"></div>
+                    <div class="hair-right"></div>
+                    <div class="face-inner">
+                        <div class="eye right"></div>
+                        <div class="eye left"></div>
+                        <div class="nose"></div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="neck border-1"></div>
+            <div class="body border-1">
+                <div class="t-shirt"></div>
+                <div class="arm left border-1">
+                    <div class="hand left border-1"></div>
+                </div>
+                <div class="arm right border-1">
+                    <div class="hand right border-1"></div>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="pants-top"></div>
+                <div class="leg left border-1">
+                    <div class="shoe"></div>
+                </div>
+                <div class="leg right border-1">
+                    <div class="shoe"></div>
+                </div>
+            </div>
+        </div>
+        <div class="message-box hide">
+            <div class="message"></div>
+        </div>
+    </div>
+    <!-- Player layout end -->
+
+    <!-- Project layout -->
+    <div class="layout" id="project-layout">
+        <div class="project-computer hide">
+            <iframe class="portfolio" src="portfolio/"></iframe>
+        </div>
+    </div>
+    <!-- Project layout end -->
+    <!-- Layouts end -->
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
